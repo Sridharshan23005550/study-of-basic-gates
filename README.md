@@ -50,7 +50,7 @@ The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will gi
 Y= A⊕B
 
 **Procedure** 
-
+```
 1.	Type the program in Quartus software.
 
 2.	Compile and run the program.
@@ -60,20 +60,41 @@ Y= A⊕B
 4.	Create nodes for inputs and outputs to generate the timing diagram.
 
 5.	For different input combinations generate the timing diagram.
-
+```
 
 **PROGRAM**
-
+```
 Program for logic gates and verify its truth table in quartus using Verilog programming
+```
+ Developed by:SRIDHARSHAN D
+ RegisterNumber:212223040205
 
- Developed by: RegisterNumber: 
- 
-**Logic symbol & Truthtable**
+ ```
+module logic gates ( a,b,y1,y2,y3,y4,y5,y6,y7);
+input a,b;
+output y1,y2,y3,y4,y5,y6,y7;
+and (y1,a,b);
+or (y2,a,b);
+not (y3,a);
+xor (y4,a,b);
+nand (y5,a,b);
+nor (y6,a,b);
+xnor ( y7,a,b);
+endmodule
+ ```
+**Logicsymbol**
+
+![ex 1 gate](https://github.com/23002776/study-of-basic-gates/assets/145742657/ccbf4d3e-ae79-44a6-ac28-4cd7c7e69720)
+
+**Truthtable**
+![ex 1(2) gate](https://github.com/23002776/study-of-basic-gates/assets/145742657/60fb42f7-4ef1-4659-81d6-11599963c952)
 
 **RTL realization Output:** 
+
+![ex 1(1) gate](https://github.com/23002776/study-of-basic-gates/assets/145742657/c6c22124-0f27-48f8-a71a-d84e21e4510e)
 
 **RTL**
 
 **Result:**
-
+The output found successfully.
 
